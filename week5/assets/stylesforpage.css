@@ -63,19 +63,7 @@ main {
 
 }
 
-.up1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(127, 80, 24);
-    width: 48%;
-    height: 80px;
-
-
-
-}
-
-.up2 {
+.up {
     display: flex;
     justify-content: center;
     align-items: center;
