@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+}
+
+body {
+
+    height: 100%;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2em;
+
+
+}
+
+header {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.pagecentre {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+
+}
+
+main {
+
+    width: 70%;
+}
+
+.upper {
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+
+
+}
+
+
+
+
+.downer {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.up1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 80, 24);
+    width: 48%;
+    height: 80px;
+
+
+
+}
+
+.up2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 80, 24);
+    width: 48%;
+    height: 80px;
+
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 80, 24);
+    width: 98%;
+    height: 80px;
+    margin-top: 10px;
+
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width: 30%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: gray;
+    justify-content: space-around;
+}
+
+.part {
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
