@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'geometria';
+    src: url('geometria.woff2') format('woff2'),
+        url('geometria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

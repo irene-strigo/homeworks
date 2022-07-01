@@ -1,0 +1,287 @@
+html {
+    height: 100%;
+
+}
+
+body {
+    font-family: 'geometria', Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: #FFFFFF;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+    justify-items: center;
+
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+
+
+}
+
+
+.logo {
+    grid-row: 1;
+    grid-column: 1/2;
+    display: inline-block;
+    color: #3257A4;
+    text-decoration: none;
+    font-size: 28px;
+    background-image: url(/week6/assets/heart.png);
+    font-weight: 500;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+}
+
+
+.katalog {
+    grid-row: 1;
+    grid-column: 3/4;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-image: url(/week6/assets/menu.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    margin-left: 20px;
+}
+
+
+
+button {
+    grid-row: 1;
+    grid-column: 4/5;
+    display: inline-block;
+    background-color: white;
+    background-image: url(/week6/assets/loupe.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0px 0px 1px 0px;
+
+    font-size: 12px;
+    padding-left: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+
+}
+
+.call {
+    grid-row: 1;
+    grid-column: 6/7;
+    display: inline-block;
+    background-image: url(/week6/assets/frame.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-size: 12px;
+    align-items: baseline;
+    color: #3257A4;
+    padding-left: 15px;
+    padding-top: 17px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+}
+
+
+
+.number {
+    grid-row: 1;
+    grid-column: 7/9;
+    display: inline-block;
+    padding-left: 15px;
+    padding-top: 17px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+
+}
+
+.social {
+    display: flex;
+    justify-content: left;
+    gap: 7px;
+    grid-row: 1;
+    grid-column: 9/11;
+    padding-left: 55px;
+    padding-top: 17px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+}
+
+.compares {
+    grid-row: 2;
+    grid-column: 6;
+    background-image: url(/week6/assets/polylines.png);
+    display: inline-block;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+    padding-top: 17px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    justify-content: center;
+
+
+}
+
+.busket {
+    grid-row: 2;
+    grid-column: 7/8;
+    background-image: url(/week6/assets/shoppingcart.png);
+    display: inline-block;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-top: 17px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+
+}
+
+.personal {
+    grid-row: 2;
+    grid-column: 9;
+    background-image: url(/week6/assets/doctor.png);
+    display: inline-block;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-top: 17px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+
+}
+
+.data {
+
+    grid-row: 2;
+    grid-column: 1/5;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+
+}
+
+main {
+    background-color: #F5F5F5;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 160px 160px 160px;
+    border: 1px solid;
+    justify-items: center;
+    height: 600px;
+
+}
+
+
+h1 {
+    display: inline-block;
+    grid-row: 1;
+    grid-column: 2;
+    gap: 10px;
+    color: #3257A4;
+    height: 150px;
+    align-self: top;
+
+}
+
+h2 {
+    background-color: #FFFFFF;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    border-style: hidden;
+    box-shadow: 0px 0px 1px 0px;
+
+
+}
+
+p {
+    font-size: 15px;
+}
+
+.defibr {
+    box-sizing: border-box;
+    width: 400px;
+    height: 312px;
+    background-image: url(/week6/assets/defibrill.png);
+    grid-column: 1;
+    grid-row: 2/3;
+
+}
+
+
+.reanim {
+    box-sizing: border-box;
+    width: 400px;
+    height: 150px;
+    background-image: url(/week6/assets/reanimation.png);
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.medinstr {
+    box-sizing: border-box;
+    width: 400px;
+    height: 150px;
+    background-image: url(/week6/assets/medinstr.png);
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.instr {
+    box-sizing: border-box;
+    width: 400px;
+    height: 150px;
+    background-image: url(/week6/assets/instr.png);
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.oxigen {
+
+    box-sizing: border-box;
+    width: 400px;
+    height: 150px;
+    background-image: url(/week6/assets/oxigen.png);
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.implant {
+    box-sizing: border-box;
+    width: 400px;
+    height: 150px;
+    background-image: url(/week6/assets/implant.png);
+    grid-row: 4;
+    grid-column: 1;
+}

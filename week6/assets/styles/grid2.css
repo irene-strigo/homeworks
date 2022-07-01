@@ -1,0 +1,77 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    gap: 10px;
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2em;
+    grid-template-areas:
+        "header header header"
+        "upper upper aside"
+        "up1 up2 aside"
+        "down down aside"
+        "footer footer footer "
+
+
+}
+
+.header {
+    grid-area: header;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: aqua;
+}
+
+.upper {
+    grid-area: upper;
+    background-color: blanchedalmond;
+}
+
+.up1 {
+    grid-area: up1;
+    background-color: bisque;
+}
+
+.up2 {
+    grid-area: up2;
+    background-color: bisque
+}
+
+.down {
+    grid-area: down;
+    background-color: bisque
+}
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    grid-template-areas: "part1 part2 part3 part4";
+    gap: 10px
+}
+
+.part1 {
+    grid-area: part1;
+    background-color: gray
+}
+
+.part2 {
+    grid-area: part2;
+    background-color: gray
+}
+
+.part3 {
+    grid-area: part3;
+    background-color: gray
+}
+
+.part4 {
+    grid-area: part4;
+    background-color: gray
+}
