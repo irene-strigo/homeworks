@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,100;1,400&display=swap');
+
+
+
+html {
+    height: 100%;
+}
+
+
+
+
+.container {
+    max-width: 1168px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 10% 40% 40% 10%;
+    gap: 5px;
+    font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.uprow {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    grid-row: 1;
+    grid-column: 7/11;
+}
+
+.uprow a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    white-space: nowrap;
+
+}
+
+.logobox {
+
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 0.5em;
+    white-space: nowrap;
+
+}
+
+
+.phonebox {
+    grid-row: 1;
+    grid-column: 3;
+    padding-top: 4vh;
+    padding-left: 2vw;
+
+
+
+}
+
+.phone {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    white-space: nowrap;
+    font-weight: bold;
+
+}
+
+
+
+.shop {
+    grid-row: 2;
+    grid-column: 5;
+    text-decoration: none;
+    color: black;
+    padding-top: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+.userbox {
+
+
+    grid-row: 2;
+    grid-column: 8;
+}
+
+.user {
+    grid-row: 2;
+    grid-column: 8;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.5em;
+    white-space: nowrap;
+    ;
+}
+
+.heartbox {
+    max-width: 100px;
+    grid-row: 2;
+    grid-column: 9;
+}
+
+.heart {
+    grid-row: 2;
+    grid-column: 9;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.5em;
+    white-space: nowrap;
+    ;
+}
+
+.cartbox {
+    max-width: 100px;
+    grid-row: 2;
+    grid-column: 10;
+}
+
+.cart {
+    grid-row: 2;
+    grid-column: 10;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 0.5em;
+    white-space: nowrap;
+    ;
+}
+
+.smallbuttonbox {
+    grid-row: 3;
+    grid-column: 1/3;
+
+
+}
+
+.smallbutton {
+    display: inline-block;
+    min-height: 4vh;
+    min-width: 10vw;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 0 2vw;
+    background-color: black;
+    background-image: url(/week7/assets/lines.png);
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    color: white;
+
+}
+
+.bigbutton {
+    grid-row: 3;
+    grid-column: 4/11;
+    height: 5vh;
+    align-content: stretch;
+
+}
+
+
+
+.bigbutton .border {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    border-radius: 25px;
+}
+
+
+.bigbutton input {
+    border-color: transparent;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.bigbutton input.search {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 10px;
+
+}
+
+.bigbutton input.search:focus-visible {
+    border: none;
+    outline: none;
+
+}
+
+.bigbutton input.submit {
+    width: 40vh;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+
+
+
+}
+
+
+.downrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-row: 4;
+    grid-column: 1/11;
+
+}
+
+.downrow a {
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.main {
+    max-width: 1168px;
+    margin: 0 auto;
+    padding-top: 10vh;
+    gap: 5px;
+    text-decoration: none;
+    font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    grid-template-areas:
+        "bannerfirst bannerfirst"
+        "middlerow second"
+        "thirdbanner thirdbanner"
+
+}
+
+
+
+.bannerfirst {
+    grid-area: bannerfirst;
+    background-image: url(/week7/assets/firstbanner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 25px;
+    height: 30vh;
+
+}
+
+.bannerfirst a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+
+
+
+}
+
+.buttonmain {
+    min-height: 4vh;
+    min-width: 10vw;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 0 2vw;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    display: block;
+    text-align: center;
+
+    margin: auto;
+
+
+
+}
+
+.middlerow {
+    grid-area: middlerow;
+    background-image: url(/week7/assets/sekondbanner1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 25px;
+    height: 30vh;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-left: 1vw;
+    padding-top: 2vh;
+}
+
+
+
+.second {
+    grid-area: second;
+    background-image: url(/week7/assets/bannersecond.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 25px;
+    height: 30vh;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-left: 2vw;
+    padding-top: 2vh;
+}
+
+.thirdbanner {
+    grid-area: thirdbanner;
+    background-image: url(/week7/assets/thirdbanner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 25px;
+    height: 30vh;
+}
+
+.thirdbanner a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-weight: 200;
+    display: block;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+
+
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 1168px;
+        margin: 0 auto;
+    }
+
+    header {
+
+        display: grid;
+        width: 800px;
+        height: 100%;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 50% 25% 25%;
+        gap: 5px;
+
+        font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .logobox {
+
+        grid-row: 1/2;
+        grid-column: 1/5;
+
+    }
+
+    .logo {
+
+        text-decoration: none;
+        color: black;
+        font-size: 0.5em;
+        white-space: nowrap;
+
+    }
+
+    .phonebox {
+        grid-row: 1/2;
+        grid-column: 6/10;
+        padding-top: 4vh;
+        padding-left: 2vw;
+
+
+    }
+
+    .phone {
+
+        text-decoration: none;
+        color: black;
+        font-size: 0.8em;
+        white-space: nowrap;
+        font-weight: bold;
+
+    }
+
+    .shop {
+        grid-row: 3;
+        grid-column: 1/10;
+        text-decoration: none;
+        color: black;
+        font-size: 2em;
+        font-weight: bold;
+
+        width: 800px;
+
+    }
+
+    .bigbutton {
+        grid-row: 2;
+        grid-column: 1/10;
+        height: 5vh;
+        width: 800px;
+
+    }
+
+
+    .userbox {
+        display: none;
+    }
+
+    .heartbox {
+        display: none;
+    }
+
+    .cartbox {
+        display: none;
+    }
+
+    .uprow {
+        display: none;
+    }
+
+    .downrow {
+        display: none;
+    }
+
+    .smallbuttonbox {
+        display: none;
+    }
+
+    .main {
+        width: 1000px;
+        margin: 0 auto;
+        gap: 5px;
+        justify-content: center;
+        text-decoration: none;
+        font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: grid;
+        grid-template-areas:
+            "bannerfirst bannerfirst"
+            "middlerow middlerow"
+            "second second"
+            "thirdbanner thirdbanner"
+
+    }
+
+    .bannerfirst {
+        width: 100%;
+        grid-area: bannerfirst;
+        background-image: url(/week7/assets/firstbanner.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 25px;
+        height: 30vh;
+
+    }
+
+    .bannerfirst a {
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+
+
+
+    }
+
+    .buttonmain {
+        min-height: 4vh;
+        min-width: 10vw;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 0 2vw;
+        background-color: black;
+        border-radius: 25px;
+        color: white;
+        display: block;
+        text-align: center;
+
+        margin: auto;
+
+
+
+    }
+
+    .middlerow {
+        grid-area: middlerow;
+        background-image: url(/week7/assets/sekondbanner1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 25px;
+        height: 30vh;
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        padding-left: 1vw;
+        padding-top: 2vh;
+    }
+
+
+
+    .second {
+        grid-area: second;
+        background-image: url(/week7/assets/bannersecond.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 25px;
+        height: 30vh;
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        display: block;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        padding-left: 2vw;
+        padding-top: 2vh;
+    }
+
+    .thirdbanner {
+        grid-area: thirdbanner;
+        background-image: url(/week7/assets/thirdbanner.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 25px;
+        height: 30vh;
+    }
+
+    .thirdbanner a {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-weight: 200;
+        display: block;
+        text-align: center;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+
+
+    }
+}
