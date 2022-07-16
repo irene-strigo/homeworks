@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        .btn {
+            border-radius: 25px;
+            background-color: #5222D0;
+            background-repeat: no-repeat;
+            color: white;
+            font-size: larger;
+            pointer-events: none;
+
+        }
+
+        .btn-basket {
+            background-image: url(assets/basket.png);
+            background-position: 85% 50%;
+            padding-right: 30px;
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        .input-field {
+            background-color: #EC615B;
+            color: white;
+        }
+
+        .card-group .card.border-hover {
+            border: 1px solid transparent;
+        }
+
+        .card-group .card.border-hover:hover {
+            border-color: #EC615B;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-5 mb-3 bg-white ">
+            <a href class="my-0 mr-md-auto "><img src="assets/vrlogo.png"> </фclass=>
+                <a class="btn btn-basket btn-sm" href="#">корзина</a>
+        </div>
+    </header>
+    <main class="container">
+
+
+        <div class="row">
+            <div class="col">
+                <div class="card-group">
+                    <div class="card p-3 border-hover">
+                        <img src="assets/sceintist.png" class="card-img-top" alt="sceintist">
+                        <div class="card-body">
+                            <h5 class="card-title">Без проводов</h5>
+                            <p class="card-text">Шлем работает без проводов. Не нужен ни компьютер, ни внешнее питание,
+                                ни большое помещение, чтобы расставить трекеры.</p>
+
+                        </div>
+                    </div>
+                    <div class="card p-3 border-hover">
+                        <img src="assets/robot.png" class="card-img-top" alt="robot">
+                        <div class="card-body">
+                            <h5 class="card-title">Без компьютера</h5>
+                            <p class="card-text">Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры. Наш
+                                шлем запускает игры из облака, поэтому просто наслаждайтесь.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="card p-3 border-hover">
+                        <img src="assets/developer.png" class="card-img-top" alt="developer">
+                        <div class="card-body">
+                            <h5 class="card-title">До 10 часов работы</h5>
+                            <p class="card-text"> Несмотря на компактность и производительность, шлем может работать до
+                                10 часов — даже, если вы играете в самые ресурсоемкие игры.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card-group">
+                        <div class="card p-3 border-hover">
+                            <div class="card-body">
+                                <h5 class="card-title">Сотни игр</h5>
+                                <p class="card-text">Уже сейчас вам доступно более сотни игр: от высокобюджетных
+                                    ААА-тайтлов до маленьких независимых проектов. Скоро их станет еще больше.</p>
+
+                            </div>
+                        </div>
+                        <div class="card p-3 border-hover">
+                            <div class="card-body">
+                                <h5 class="card-title">Почти даром</h5>
+                                <p class="card-text">По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы
+                                    существенно экономите на мощном компьютере.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="card p-3 border-hover input-field">
+                            <div class="card-body">
+                                <h5 class="card-title">Новости</h5>
+                                <form class="form">
+                                    <div class="form-group">
+
+                                        <input type="email" class="form-control" id="inputemail"
+                                            placeholder="Эл. почта">
+                                    </div>
+                                    <button type="submit" class="btn mb-2">подписаться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="nav">
+                <li class="nav">
+                    <a class="nav-link" href="#">Возможности</a>
+                </li>
+                <li class="nav">
+                    <a class="nav-link" href="#">Где купить</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link href=" #">Доставка</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Помощь</a>
+                </li>
+
+            </ul>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
