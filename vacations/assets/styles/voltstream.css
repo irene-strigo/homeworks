@@ -1,0 +1,103 @@
+html {
+    height: 100%;
+}
+
+
+
+.cover {
+    background: linear-gradient(to right, #83A4BD, #BF4145, #2D1C22);
+
+
+
+}
+
+.button {
+    display: inline-block;
+
+}
+
+.main {
+    height: 100%;
+    max-width: 1340px;
+    background-image: url(../Group\ 62.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+
+}
+
+.text {
+    line-height: 1.5em;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 3em;
+}
+
+.btn-secondary {
+    background-color:
+        #F2323D;
+}
+
+.btn-outline-light {
+    border-radius: 0em;
+    color: white;
+    text-align: left;
+
+
+
+}
+
+.text-under {
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.second-text {
+    color: white;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 3em;
+
+}
+
+.second-main {
+    border: 1px solid gray;
+
+}
+
+.container-third {
+    background-color: white;
+    width: 90%;
+    height: 70%;
+}
+
+.input-third {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 20vw;
+    height: 10vh;
+    padding: 10px;
+
+}
+
+
+.third-part {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        background-image: none
+    }
+
+    .input-third {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
+.hyphen {
+    hyphens: auto
+}
