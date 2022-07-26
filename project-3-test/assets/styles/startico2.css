@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Space Grotesk";
+}
+
+.alert-container .alert-container-item.alert-item__success {
+  background-color: #DDF0A7;
+}
+.alert-container .alert-container-item .alert-item__text {
+  max-width: 1296px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+.alert-container .alert-container-item .alert-item__close {
+  float: right;
+}
+
+.fullscreen {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page1 {
+  background-color: #162E3C;
+}
+
+.header {
+  background-color: #fff;
+}
+.header .header__container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+@media screen and (min-width: 715px) {
+  .header .header__container {
+    flex-flow: row;
+    padding-bottom: 0;
+  }
+}
+.header .header__container .header__container__spacer {
+  display: none;
+}
+@media screen and (min-width: 715px) {
+  .header .header__container .header__container__spacer {
+    display: block;
+    flex-grow: 1;
+  }
+}
+.header .header__container .header__container__logo, .header .header__container .header__container__item {
+  text-decoration: none;
+}
+@media screen and (min-width: 715px) {
+  .header .header__container .header__container__logo, .header .header__container .header__container__item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.header .header__container .header__container__logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.header .header__container .header__container__item {
+  padding: 0.5rem;
+  white-space: nowrap;
+  color: #162E3C;
+}
+@media screen and (min-width: 715px) {
+  .header .header__container .header__container__item {
+    margin-right: 1.5rem;
+  }
+  .header .header__container .header__container__item:last-child {
+    margin-right: 0;
+  }
+}
+.header .header__container .header__container__item.btn {
+  border: 1px solid #162E3C;
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.header .header__container .header__container__item.btn.btn-black {
+  background-color: #162E3C;
+  color: white;
+}/*# sourceMappingURL=startico2.css.map */

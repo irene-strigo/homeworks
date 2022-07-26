@@ -1,0 +1,118 @@
+$pistachio: #DDF0A7;
+$small-text: "Space Grotesk";
+$mainblack: #162E3C;
+$white: #fff;
+
+$container-max-width: 1296px;
+
+$color-success: $pistachio;
+
+$screen-medium: 715px;
+
+html {
+    height: 100%;
+
+}
+
+body {
+    font-family: $small-text;
+
+}
+
+.alert-container {
+    & .alert-container-item {
+
+
+        &.alert-item__success {
+            background-color: $color-success;
+        }
+
+        & .alert-item__text {
+            max-width: $container-max-width;
+            margin: 0 auto;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        & .alert-item__close {
+            float: right;
+        }
+    }
+}
+
+.fullscreen {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page1 {
+    background-color: $mainblack;
+}
+
+.header {
+    background-color: $white;
+
+    & .header__container {
+        max-width: $container-max-width;
+        margin: 0 auto;
+        padding: 0 1rem 1rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        @media screen and (min-width: $screen-medium) {
+            flex-flow: row;
+            padding-bottom: 0;
+        }
+
+        & .header__container__spacer {
+            display: none;
+
+            @media screen and (min-width: $screen-medium) {
+                display: block;
+                flex-grow: 1;
+            }
+        }
+
+        & .header__container__logo,
+        & .header__container__item {
+            text-decoration: none;
+
+            @media screen and (min-width: $screen-medium) {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        & .header__container__logo {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        & .header__container__item {
+            padding: 0.5rem;
+            white-space: nowrap;
+            color: $mainblack;
+
+            @media screen and (min-width: $screen-medium) {
+                margin-right: 1.5rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            &.btn {
+                border: 1px solid $mainblack;
+                border-radius: 20px;
+                padding: 0.5rem;
+                margin-top: 1rem;
+
+                &.btn-black {
+                    background-color: $mainblack;
+                    color: white;
+                }
+            }
+        }
+    }
+}
