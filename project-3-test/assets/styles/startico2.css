@@ -26,6 +26,8 @@ body {
 
 .page1 {
   background-color: #162E3C;
+  display: flex;
+  flex-flow: column;
 }
 
 .header {
@@ -39,7 +41,7 @@ body {
   flex-flow: column;
   align-items: center;
 }
-@media screen and (min-width: 715px) {
+@media (min-width: 768px) {
   .header .header__container {
     flex-flow: row;
     padding-bottom: 0;
@@ -48,7 +50,7 @@ body {
 .header .header__container .header__container__spacer {
   display: none;
 }
-@media screen and (min-width: 715px) {
+@media (min-width: 768px) {
   .header .header__container .header__container__spacer {
     display: block;
     flex-grow: 1;
@@ -57,7 +59,7 @@ body {
 .header .header__container .header__container__logo, .header .header__container .header__container__item {
   text-decoration: none;
 }
-@media screen and (min-width: 715px) {
+@media (min-width: 768px) {
   .header .header__container .header__container__logo, .header .header__container .header__container__item {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -72,7 +74,7 @@ body {
   white-space: nowrap;
   color: #162E3C;
 }
-@media screen and (min-width: 715px) {
+@media (min-width: 768px) {
   .header .header__container .header__container__item {
     margin-right: 1.5rem;
   }
@@ -89,4 +91,120 @@ body {
 .header .header__container .header__container__item.btn.btn-black {
   background-color: #162E3C;
   color: white;
+}
+
+.heading {
+  background: url(../screen1-bg.svg) no-repeat top center;
+  background-size: contain;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-bottom: 25vw;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .heading {
+    padding-bottom: 20vw;
+  }
+}
+.heading .heading-content {
+  width: 50vw;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+}
+@media (min-width: 768px) {
+  .heading .heading-content {
+    padding: 6rem 0;
+  }
+}
+.heading .heading-content .heading-content__header {
+  font-family: "frauncesblack";
+}
+.heading .heading-content .heading-content__actions {
+  padding: 1rem 0;
+}
+.heading .heading-content .heading-content__actions .btn {
+  border: 1px solid #162E3C;
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+}
+.heading .heading-content .heading-content__actions .btn.btn-pistachio {
+  background-color: #DDF0A7;
+  color: #162E3C;
+}
+.heading .heading-content .heading-content__actions .btn.btn-arrow {
+  background: url(../arrow-right.svg) center right no-repeat;
+  padding-right: 1.5rem;
+  color: #fff;
+}
+.heading .heading-content .heading-content__logo {
+  padding: 2rem 0 0 0;
+}
+.heading .heading-content .heading-content__logo-item {
+  height: 25px;
+  padding: 0 5px;
+}
+
+.video {
+  padding-bottom: 3rem;
+  position: relative;
+  margin-top: -25vw;
+}
+@media (min-width: 768px) {
+  .video {
+    margin-top: -20vw;
+  }
+}
+.video .video-pane {
+  background-color: #162E3C;
+  height: 25vw;
+}
+@media (min-width: 768px) {
+  .video .video-pane {
+    height: 20vw;
+  }
+}
+.video .video-handler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.video .video-background {
+  background: url(../foto-girl.png) no-repeat center center;
+  width: 100%;
+  background-size: contain;
+  width: 100vw;
+  height: 50vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .video .video-background {
+    width: 80vw;
+    height: 40vw;
+  }
+}
+.video .video-background .video-button.btn {
+  border: 1px solid #162E3C;
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.video .video-background .video-button.btn.btn-pistachio {
+  background-color: #DDF0A7;
+  color: #162E3C;
 }/*# sourceMappingURL=startico2.css.map */
