@@ -158,10 +158,12 @@ body {
   padding-bottom: 3rem;
   position: relative;
   margin-top: -25vw;
+  margin-bottom: 25vw;
 }
 @media (min-width: 768px) {
   .video {
     margin-top: -20vw;
+    margin-bottom: 20vw;
   }
 }
 .video .video-pane {

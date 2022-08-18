@@ -196,9 +196,11 @@ body {
     position: relative;
 
     margin-top: -25vw;
+    margin-bottom: 25vw;
 
     @include media-breakpoint-up($grid-breakpoint-md) {
         margin-top: -20vw;
+        margin-bottom: 20vw;
     }
 
 
