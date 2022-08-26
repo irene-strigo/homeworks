@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert('Dobar Dan')
+    </script>
+    <style>
+        body {
+            height: 100%;
+            display: grid;
+
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+
+        }
+
+        .welcome {
+            border: 1px solid black;
+            background-color: aqua;
+            height: 40px;
+            border-radius: 10px;
+            margin: 10px auto;
+
+        }
+
+        .calc1,
+        .calc2 {
+
+            margin: 0 auto;
+            background-color: burlywood;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .calc2 {
+            background-color: cadetblue;
+        }
+
+
+        .count {
+            border: transparent;
+            background-color: aquamarine;
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+    </style>
+
+    <script>
+        function welcome() {
+            let presentation = prompt("Как тебя зовут?");
+            alert((`Hello, ${presentation}!`))
+
+        }
+
+        function sum() {
+            const a = prompt("Введите первое число");
+            const b = prompt("Введите второе число");
+            alert(Number(a) + Number(b));
+        }
+
+        function minus() {
+            alert(promptNumber("первое") - promptNumber("второе"));
+        }
+
+        function multip() {
+            alert(promptNumber("первое") * promptNumber("второе"));
+        }
+
+        function division() {
+            alert(promptNumber("первое") / promptNumber("второе"));
+        }
+
+        function promptNumber(text) {
+            return Number(prompt(`Введите ${text} число`))
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Давай познакомимся</h2>
+    <button class="welcome" onClick="welcome()"><b>Push!</b></button>
+    <button class="welcome" onClick=' let yourname = prompt("Как тебя зовут?"); alert(`Привет, ${yourname}!`);'>Нажми
+        меня</button>
+    <h2>Давай посчитаем</h2>
+    <h3>вот так</h3>
+    <div class="calc1">
+        <button class="count" onClick='let m = prompt("Введите первое число");
+        let n = prompt("Введите второе число");
+        
+        alert(Number (m) + Number (n));'><b>+</b></button>
+
+        <button class="count" onClick='let k = prompt("Введите первое число");
+        let l = prompt("Введите второе число");
+        
+        alert(Number (k) - Number (l));'><b>-</b></button>
+
+        <button class="count" onClick='let y = prompt("Введите первое число");
+    let x = prompt("Введите второе число");
+    
+    alert(Number (y) * Number (x));'><b>*</b></button>
+
+
+        <button class="count" onClick='let i = prompt("Введите первое число");
+    let h = prompt("Введите второе число");
+    
+    alert(Number (i) / Number (h));'><b>/</b></button></div>
+
+    <h3>или вот так</h3>
+
+    <div class="calc2"> <button class="count" onClick="sum()"><b>+</b></button>
+        <button class="count" onClick="minus()"><b>-</b></button>
+        <button class="count" onClick="multip()"><b>*</b></button>
+        <button class="count" onClick="division()"><b>/</b></button></div>
+
+
+
+</body>
+
+</html>
