@@ -165,7 +165,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  font-size: 20px;
+  font-size: 1em;
   justify-items: flex-end;
 }
 @media screen and (max-width: 768px) {
@@ -347,7 +347,7 @@ body {
   border: 1px solid #966EF7;
 }
 .prices__timetable {
-  margin: 2em auto;
+  margin: 4em auto;
 }
 .prices__timetable_details {
   display: flex;
@@ -411,7 +411,7 @@ td {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  background-image: url(../images/Rectangle4.svg);
+  background-image: url(../images/rectangle.svg);
   background-position: right top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -571,6 +571,11 @@ td {
 
 .groups__container {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .groups__container {
+    margin-bottom: -7em;
+  }
 }
 
 .questions {
