@@ -192,7 +192,7 @@ body {
 .page__container {
     height: 100%;
     margin: 0 auto;
-    background: url(/assets/images/mainbackground.svg) top center;
+    background: url(assets/images/mainbackground.svg) top center;
     background-repeat: no-repeat;
     padding-bottom: 15em;
 
@@ -568,7 +568,7 @@ td {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        background-image: url(/assets/images/Rectangle\ 4.svg);
+        background-image: url(assets/images/Rectangle\ 4.svg);
         background-position: right top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -585,7 +585,7 @@ td {
         // .prices__feedback_text
 
         &_text {
-            background-image: url(/assets/images/commas.svg);
+            background-image: url(assets/images/commas.svg);
             background-repeat: no-repeat;
             grid-column: 2;
             grid-row: 1;
