@@ -242,7 +242,7 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
-            font-size: 20px;
+            font-size: 1em;
 
             @media screen and (max-width: $grid-breakpoint-md) {
                 grid-template-columns: 1fr;
