@@ -870,7 +870,7 @@ td {
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-delay: 1s;
-    overflow: hidden;
+    animation-direction: alternate;
 }
 
 @keyframes my-animation {

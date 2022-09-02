@@ -642,7 +642,8 @@ td {
           animation-duration: 3s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  overflow: hidden;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 @-webkit-keyframes my-animation {
