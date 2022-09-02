@@ -197,6 +197,7 @@ body {
     background: url(../images/mainbackground.svg) top center;
     background-repeat: no-repeat;
     padding-bottom: 15em;
+    overflow-x: hidden;
 
     @media screen and (max-width: $grid-breakpoint-md) {
         margin-bottom: 4em;

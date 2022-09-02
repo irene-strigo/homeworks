@@ -152,6 +152,7 @@ body {
   background: url(../images/mainbackground.svg) top center;
   background-repeat: no-repeat;
   padding-bottom: 15em;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
   .page__container {
