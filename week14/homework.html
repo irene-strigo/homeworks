@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //alert('Dobar Dan')
+    </script>
+    <style>
+        body {
+            height: 100%;
+            display: grid;
+
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+
+        }
+
+        .welcome {
+            border: 1px solid black;
+            background-color: aqua;
+            height: 40px;
+            border-radius: 10px;
+            margin: 10px auto;
+
+        }
+
+        .calc1,
+        .calc2 {
+
+            margin: 0 auto;
+            background-color: burlywood;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .calc2 {
+            background-color: cadetblue;
+        }
+
+
+        .count {
+            border: transparent;
+            background-color: aquamarine;
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+
+        #emptyblock {
+            background: blue;
+            height: 7em;
+            width: 20em;
+            margin: 2em auto;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .gallery {
+            justify-content: center;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        .gallerybtn {
+            padding: 10px;
+            background-color: aliceblue;
+            border-radius: 20px;
+            margin: 1em;
+        }
+
+        .gallery-alt {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .gallery-alt img {
+            display: none
+        }
+    </style>
+
+    <script>
+        function changeImg() {
+            galleryimg = document.getElementById('galleryimg');
+            galleryimg.src = "assets/images/cat2.JPG";
+        };
+
+        function changeImg1() {
+            galleryimg = document.getElementById('galleryimg');
+            galleryimg.src = "assets/images/cat3.JPG";
+        };
+
+        function changeImg2() {
+            galleryimg = document.getElementById('galleryimg');
+            galleryimg.src = "assets/images/cat1.JPG";
+        };
+
+        function changeMe() {
+            emptyblock = document.getElementById('emptyblock');
+            emptyblock.style.background = 'rgb(255, 0, 30)';
+        }
+
+        function myAlert(text) {
+            document.getElementById('nameWelcome').value = `Привет, ${text}!`
+        }
+
+        function myAlert1(text) {
+            document.getElementById('result').value = `Результат ${text}`
+        }
+
+        function sum() {
+            const a = document.getElementById('first').value;
+            const b = document.getElementById('second').value;
+            myAlert1(Number(a) + Number(b));
+        }
+
+        function minus() {
+            const a = document.getElementById('first').value;
+            const b = document.getElementById('second').value;
+            myAlert1(Number(a) - Number(b));
+
+        }
+
+        function multip() {
+            const a = document.getElementById('first').value;
+            const b = document.getElementById('second').value;
+            myAlert1(Number(a) * Number(b));
+
+        }
+
+        function division() {
+            const a = document.getElementById('first').value;
+            const b = document.getElementById('second').value;
+            myAlert1(Number(a) / Number(b));
+
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Давай познакомимся</h2>
+    <input type="text" value="" placeholder="Имя" class="welcome" id="nameInput">
+    <input type="text" value="" placeholder="Приветствие" class="welcome" id="nameWelcome">
+    <button class="welcome" onclick="myAlert(document.getElementById('nameInput').value)"><b>Push!</b></button>
+
+    <h2>Давай посчитаем</h2>
+
+
+    <input type="text" value="" placeholder="введите первое число" class="welcome" id="first">
+    <input type="text" value="" placeholder="введите второе число" class="welcome" id="second">
+    <input type="text" value="" placeholder="результат" class="welcome"
+        onclick="myAlert1(document.getElementById('number').value)" id="result">
+
+
+    <div class="calc2"> <button class="count" onClick="sum()"><b>+</b></button>
+        <button class="count" onClick="minus()"><b>-</b></button>
+        <button class="count" onClick="multip()"><b>*</b></button>
+        <button class="count" onClick="division()"><b>/</b></button>
+    </div>
+
+    <div id="emptyblock" onclick="changeMe()">Click here!</div>
+
+
+    <div class="gallery"><img id="galleryimg" onclick="changeImg2()" src="assets/images/cat1.JPG">
+        <button class="gallerybtn" onclick="changeImg1()">назад</button>
+        <button class="gallerybtn" onclick="changeImg()">вперёд</button>
+    </div>
+
+</body>
+
+</html>
