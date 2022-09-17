@@ -663,4 +663,12 @@ td {
   100% {
     margin-left: 100%;
   }
+}
+#errorMessage,
+#errorMessage1 {
+  color: red;
+}
+
+#welcome {
+  color: #8733E0;
 }/*# sourceMappingURL=index.css.map */

@@ -60,17 +60,23 @@
                 <form class="contacts__container_form">
                     <p>Оставьте заявку, чтобы узнать все подробности, и наш менеджер перезвонит вам.
                         Оставьте заявку и получите бесплатное пробное занятие</p>
-                    <input class="form__input" type="text" placeholder="Ваше имя">
-                    <input class="form__input" type="text" placeholder="8 900 000 00 00">
-                    <textarea class="form__input" name="comment" cols="40" rows="4"
+
+                    <input class="form__input" id="name" type="text" value="" placeholder="Ваше имя">
+                    <input class="form__input" id="phone" type="number" value="" placeholder="8 900 000 00 00">
+                    <input class="form__input" id="phonecopy" type="number" value=""
+                        placeholder="повторите номер телефона">
+                    <textarea class="form__input" value="" id="textmessage" name="comment" cols="40" rows="4"
                         placeholder="Ваше сообщение"></textarea>
-                    <p><input type="checkbox" id="agreement" name="agreement" value="agreement"> Я согласен на обработку
+                    <div id="errorMessage"></div>
+                    <p><input type="checkbox" id="agreement" name="agreement"> Я согласен на обработку
                         персональных
                         данных и
                         согласен с политикой конфиденциальности
                         данного
                         сайта</p>
-                    <input class="prices__card_button" type="submit" value="Отправить">
+                    <div id="errorMessage1"></div>
+                    <div id="welcome"></div>
+                    <button class="prices__card_button" onclick="check()" type="button">Отправить</button>
                 </form>
                 <div class="contacts__container_address"></div>
             </div>
@@ -98,7 +104,64 @@
         </div>
     </footer>
 
+    <script>
+        function check() {
+            let text = document.getElementById('name');
+            document.getElementById('errorMessage')
+                .innerHTML = "";
 
+            if (text.value == "") {
+                document.getElementById('errorMessage')
+                    .innerHTML += "Напишите ваше имя<br>";
+            }
+
+            let number = document.getElementById('phone');
+
+            if (number.value == "")
+
+            {
+                document.getElementById('errorMessage')
+                    .innerHTML += "Напишите ваш телефон<br>";
+            }
+
+            let number1 = document.getElementById('phonecopy');
+            if (number1.value == "") {
+                document.getElementById('errorMessage')
+                    .innerHTML += "Повторите ваш телефон<br>";
+            }
+
+            let numbercompare = document.getElementById('phone, phonecopy');
+            if (number1.value != number.value) {
+                document.getElementById('errorMessage')
+                    .innerHTML += "Номера телефонов не совпадают<br>";
+            }
+
+            let text1 = document.getElementById('textmessage');
+
+            if (text1.value == "") {
+                document.getElementById('errorMessage')
+                    .innerHTML += "Напишите сообщение<br>";
+            }
+
+            let checkbox = document.getElementById('agreement');
+            document.getElementById('errorMessage1')
+                .innerHTML = "";
+
+            if (checkbox.checked == "") {
+                document.getElementById('errorMessage1')
+                    .innerHTML += "Необходимо согласие на обработку данных<br>";
+            }
+
+            let welcome = document.getElementById('welcome');
+            document.getElementById('welcome')
+                .innerHTML = "";
+            if ((checkbox.checked != "") && (text.value != "") && (number.value != "") && (text1.value != "") && (
+                    number1.value == number.value)) {
+                document.getElementById('welcome').innerHTML = (document.getElementById('name').value) + "," +
+                    " ваша информация отправлена!";
+            }
+        }
+    </script>
 </body>
 
 </html>
