@@ -1,0 +1,150 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.prices__card_button {
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 10px;
+    background: linear-gradient(#FF86F4, #FFBCFD);
+    color: white;
+}
+
+.prices__card_button:hover {
+    background: #966EF7;
+    border: 1px solid #966EF7;
+}
+
+.boldtext {
+    background: #9B4EED;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.violet {
+    color: #8733E0;
+}
+
+.contacts__container {
+    max-width: 1492px;
+    margin: 5em auto;
+}
+
+.contacts__container_form {
+    background: linear-gradient(#FF86F4, #9D8AE6, #D5CFF5);
+    border-radius: 30px;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    padding: 2em;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__container_form {
+        max-width: 100%;
+    }
+}
+
+.form__input {
+    border-color: #966EF7;
+    border-radius: 30px;
+    padding: 2em;
+    margin: 0.5em 0;
+}
+
+#contacts__heading {
+    text-align: center;
+    font-size: 2em;
+}
+
+#agreement {
+    transform: scale(2);
+    margin: 0.5rem;
+}
+
+.contactinfo {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+}
+
+.contactinfo:hover {
+    color: #8733E0;
+}
+
+.groups__container {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .groups__container {
+        margin-bottom: -7em;
+    }
+}
+
+#errorMessage,
+#errorMessage1 {
+    color: red;
+}
+
+#welcome {
+    color: #8733E0;
+}
+
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+h2,
+h3 {
+    text-align: center;
+
+}
+
+.welcome {
+    border: 1px solid black;
+    background-color: rgb(241, 250, 250);
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px auto;
+
+}
+
+.calc1,
+.calc2 {
+
+    margin: 0 auto;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.calc2 {
+    background-color: cadetblue;
+}
+
+
+.count {
+    border: transparent;
+    background-color: rgb(23, 225, 158);
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 5px auto;
+
+}

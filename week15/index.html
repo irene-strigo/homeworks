@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+    <h2>Выберите цвет</h2>
+    <select name="color" id="color" class="welcome" onchange="show()">
+        <option value="white">Белый</option>
+        <option value="gray">Серый</option>
+        <option value="blue">Голубой</option>
+        <option value="bege">Бежевый</option>
+    </select>
+
+    <h2>Давай посчитаем</h2>
+    <input type="text" value="" placeholder="введите первое число" class="welcome" id="first">
+    <input type="text" value="" placeholder="введите второе число" class="welcome" id="second">
+    <input type="text" value="" placeholder="результат" class="welcome" id="result">
+    <input type="radio" name="count" class="count" value="sum"><b>+</b>
+    <input type="radio" name="count" class="count" value="minus"><b>-</b></input>
+    <input type="radio" name="count" class="count" value="multip"><b>*</b></input>
+    <input type="radio" name="count" class="count" value="division"><b>/</b></input>
+    <button class="count" onclick="result()"><b>=</b></button>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

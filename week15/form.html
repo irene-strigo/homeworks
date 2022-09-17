@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymnastics</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@300&family=Roboto+Slab:wght@200&family=Roboto:ital,wght@0,100;1,400&family=Space+Grotesk&display=swap">
+
+    <link rel="stylesheet" href="assets/styles/index.css">
+
+
+</head>
+
+<body>
+
+    <main>
+        <div class="page__container">
+            <div class="contacts__container">
+                <h2 class="violet" id="contacts__heading">СВЯЖИТЕСЬ С НАМИ</h2>
+                <form class="contacts__container_form">
+                    <p>Оставьте заявку, чтобы узнать все подробности, и наш менеджер перезвонит вам.
+                        Оставьте заявку и получите бесплатное пробное занятие</p>
+
+                    <input class="form__input" id="name" type="text" value="" placeholder="Ваше имя">
+                    <input class="form__input" id="phone" type="number" value="" placeholder="8 900 000 00 00">
+                    <input class="form__input" id="phonecopy" type="number" value=""
+                        placeholder="повторите номер телефона">
+                    <textarea class="form__input" value="" id="textmessage" name="comment" cols="40" rows="4"
+                        placeholder="Ваше сообщение"></textarea>
+                    <div id="errorMessage"></div>
+                    <p><input type="checkbox" id="agreement" name="agreement"> Я согласен на обработку
+                        персональных
+                        данных и
+                        согласен с политикой конфиденциальности
+                        данного
+                        сайта</p>
+                    <div id="errorMessage1"></div>
+                    <div id="welcome"></div>
+                    <button class="prices__card_button" onclick="check()" type="button">Отправить</button>
+                </form>
+
+            </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
