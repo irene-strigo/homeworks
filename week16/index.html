@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+    <div class="carprice">
+        <h2>Калькулятор расчёта стоимости автомобиля</h2>
+        <h3>Транспорт</h3>
+        <select name="cars" id="carType" class="field" onchange="choiсeCarType()">
+        </select>
+        <h3>Кузов</h3>
+        <select name="carBody" id="carBody" class="field">
+        </select>
+        <h3>Марка</h3>
+        <select name="carManufact" id="carManufact" class="field">
+        </select>
+        <h3>Модель</h3>
+        <select name="carModel" id="carModel" class="field">
+        </select>
+        <div>
+            <h3>Возраст автомобиля</h3>
+            <input type="radio" name="carAge" class="#" value="three"><b>Меньше 3 лет</b>
+            <input type="radio" name="carAge" class="#" value="three-five"><b>От 3 до 5 лет</b></input>
+            <input type="radio" name="carAge" class="#" value="five-seven"><b>От 5 до 7 лет</b>
+            <input type="radio" name="carAge" class="#" value="overseven"><b>Больше 7 лет</b></input>
+        </div>
+
+        <h3>Пробег,км</h3>
+        <input type="text" class="field">
+        <div>
+            <h3>Растаможка</h3>
+            <input type="radio" name="customs" class="#" value="clear"><b>Растаможенный</b>
+            <input type="radio" name="customs" class="#" value="notClear"><b>Нерастаможенный</b></input>
+            <h3>Топливо</h3>
+            <input type="radio" name="fuel" class="#" value="petrol"><b>Бензин</b>
+            <input type="radio" name="fuel" class="#" value="diesel"><b>Дизель</b></input>
+            <input type="radio" name="fuel" class="#" value="gas"><b>Газ</b>
+            <input type="radio" name="fuel" class="#" value="hybrid"><b>Гибрид</b></input>
+            <input type="radio" name="fuel" class="#" value="other"><b>Другое</b></input>
+        </div>
+        <button type="button" class="send">Рассчитать цену</button>
+    </div>
+    <div class="summary"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
