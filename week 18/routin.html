@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%
+        }
+
+        .routin-list {
+            text-align: center;
+            font-size: 2em;
+            font-family: cursive;
+            background-color: burlywood;
+            width: 15em;
+            height: 100vh;
+            margin: 0 auto;
+        }
+
+        .taskContainer {
+            padding: 10px
+        }
+
+        #newTask {
+            font-family: cursive;
+            padding: 5px;
+            border: solid bisque;
+            border-radius: 10px;
+        }
+
+        .taskButton {
+            background-color: bisque;
+            padding: 5px;
+            border: solid bisque;
+            border-radius: 10px;
+            font-family: cursive;
+        }
+
+        #result {
+            background-color: darkseagreen;
+            border-radius: 10px;
+
+
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="routin-list">
+        <div id="container"></div>
+        <div> <input type="text" id="newTask" optional><button class="taskButton" onclick="addTask()">добавить
+                задачу</button></div>
+        <button class="taskButton" onclick="checkTasks()">Всё!</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        let tasks = ['Зарядка', 'Хорватский', 'Прогулка', 'Фортепиано', 'ITGIRLS', 'Чтение'];
+
+        function finishTask(sender) {
+            sender.parentElement.classList.toggle("done")
+        }
+
+        function checkTasks() {
+            const checkedTasks = document.querySelectorAll('.task:checked')
+
+            if (checkedTasks.length === tasks.length) {
+                document.getElementById('result').innerHTML = 'Молодец! Всё!'
+            } else {
+                document.getElementById('result').innerHTML = 'Молодец, но ещё не всё!'
+            }
+        }
+
+        function addTask() {
+            let name = document.getElementById('newTask').value
+            tasks.push(name);
+            generateTasks();
+        }
+
+        function generateTasks() {
+
+            let optionsString = "";
+            for (let task of tasks) {
+                optionsString +=
+                    `<div class="taskContainer"><input type='checkbox' class="task" onchange="finishTask(this)"><span>${task}</span></div>`
+            }
+            document.getElementById("container").innerHTML = 'Ира, привет!' + optionsString;
+
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            generateTasks();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Общество любителей домашних животных</h1>
+    </header>
+    <main>
+        <form class="petsowner-container">
+            <h2>Секция котиков</h2>
+
+            <h3><b>Имена:</b></h3>
+            <p>используйте кириллицу</p>
+            <fieldset id="names">
+                <label for="petname">Имя котика <input type="text" id="petname" pattern="^[а-яА-ЯёЁ-]+$" required>
+                </label>
+                <br />
+                <label for="youname">Кличка хозяина <input type="text" id="youname" pattern="^[а-яА-ЯёЁ-]+$"
+                        required></label><br />
+                <label for="address">Где живёт хозяин <input type="text" id="address" pattern="^[а - яА-ЯёЁ- ]+$"
+                        required></label><br />
+            </fieldset>
+
+            <h3><b>Вид вашего котика:</b></h3>
+            <select required>
+                <option selected disabled value="">--Выбрать--</option>
+                <option value="shorthair">Короткошерстный</option>
+                <option value="longhair">Длинношерстный</option>
+                <option value="bald">Лысый</option>
+                <option value="curly">Кудрявый</option>
+            </select>
+
+
+            <h3><b>Что предпочитает ваш котик из еды:</b></h3>
+            <label for="food"> Сухой корм<input type="checkbox" id="dry" value="" /></label>
+            <label for="food">Влажный корм<input type="checkbox" id="wet" value="" /></label>
+            <label for="food">Лечебный корм<input type="checkbox" id="med" value="" /></label>
+            <label for="food">Натуральное мясо<input type="checkbox" id="meat" value="" /></label>
+
+            <h3><b>Сколько весит ваш питомец?</b></h3>
+            <input type="number" placeholder="кг" min="1" max="25" required>
+            <h3><b>А у вас котик или кошечка?</b><br /></h3>
+            <label for="sex">он<input type="radio" name="s" value="male"></label>
+            <label for="sex">она<input type="radio" name="s" value="female"></label>
+            <label for="sex">у меня много питомцев<input type="radio" name="s" value="both"></label>
+            <h3><b>Дополнительная информация</b></h3>
+            <textarea type="text" rows="10" cols="20" placeholder="Что ещё вы можете сообщить про своего котика?"
+                required></textarea>
+            <br />
+            <h3> <b>Добавьте фотографию питомца</b></h3>
+            <input type="file" optional /> <br />
+
+            <button class="form-button">Сохранить</button>
+
+        </form>
+        <script>
+            let galleryPosition = 0;
+
+            function switchGallery(position) {
+                const images = document.getElementById('gallery').getElementsByTagName('img')
+                const imagesLength = images.length
+
+                if (position < 0) {
+                    position = imagesLength - 1
+                } else if (position > imagesLength - 1) {
+                    position = 0
+                }
+
+                for (let i = 0; i < imagesLength; i++) {
+                    let displayValue = 'none'
+                    if (i === position) {
+                        displayValue = 'block'
+                    }
+                    images[i].style = `display: ${displayValue}`
+                }
+
+                return position
+            }
+        </script>
+        <div class="gallery-alt" id="gallery">
+            <img src="assets/images/cat1.JPG">
+            <img src="assets/images/cat2.JPG">
+            <img src="assets/images/cat3.JPG">
+        </div>
+        <div class="gallery-buttons">
+            <button class="gallerybtn" onclick="galleryPosition = switchGallery(galleryPosition-1)">назад</button>
+            <button class="gallerybtn" onclick="galleryPosition = switchGallery(galleryPosition+1)">вперед</button>
+        </div>
+        <script>
+            switchGallery(galleryPosition)
+        </script>
+
+
+    </main>
+    <footer>Ассоциация любителей кошек&copy;</footer>
+</body>
+
+</html>
