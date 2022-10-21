@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-heading">
+            <h2>Регистрация</h2>
+        </div>
+        <form novalidate class="form-container">
+            <input class="form-input" id="login" type="text" placeholder="логин" pattern="^[a-zA-Z- 0-9]+$" required>
+
+            <p>используйте латинские буквы (a-z), цифры</p>
+            <input class="form-input" id="address" type="email" value="" placeholder="e-mail" pattern="^.+@.+\..+$"
+                pattern="^([a-z0-9]+\.)?[a-z0-9][a-z0-9-]*\.[a-z]{2,6}$/i" required>
+            <input class="form-input" id="date" type="text" value="" placeholder="00.00.2022"
+                pattern="^\d{2}.\d{2}.\d{4}$" required>
+            <input class="form-input" id="phone" type="text" value="" placeholder="телефон"
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,11}$" maxlength="12">
+            <div class="errorsInfo"></div>
+            <button class="form-button" onclick="checkAll(); return false">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

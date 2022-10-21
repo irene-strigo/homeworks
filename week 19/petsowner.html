@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Общество любителей домашних животных</h1>
+    </header>
+    <main>
+        <form class="petsowner-container">
+            <h2>Секция котиков</h2>
+
+            <h3><b>Имена:</b></h3>
+            <p>используйте кириллицу</p>
+            <fieldset id="names">
+                <label for="petname">Имя котика <input type="text" id="petname" pattern="^[а-яА-ЯёЁ-]+$" required>
+                </label>
+                <br />
+                <label for="youname">Кличка хозяина <input type="text" id="youname" pattern="^[а-яА-ЯёЁ-]+$"
+                        required></label><br />
+                <label for="address">Где живёт хозяин <input type="text" id="address" pattern="^[а - яА-ЯёЁ- ]+$"
+                        required></label><br />
+            </fieldset>
+
+            <h3><b>Вид вашего котика:</b></h3>
+            <select id="cattype" required>
+                <option selected disabled value="">--Выбрать--</option>
+                <option name="type" value="короткошерстный">короткошерстный</option>
+                <option name="type" value="длинношерстный">длинношерстный</option>
+                <option name="type" value="лысый">лысый</option>
+                <option name="type" value="кудрявый">кудрявый</option>
+            </select>
+
+
+            <h3><b>Что предпочитает ваш котик из еды:</b></h3>
+            <label for="dry">Сухой корм<input type="checkbox" name="food" id="dry" value="dry" /></label>
+            <label for="wet">Влажный корм<input type="checkbox" name="food" id="wet" value="wet" /></label>
+            <label for="med">Лечебный корм<input type="checkbox" name="food" id="med" value="med" /></label>
+            <label for="meat">Натуральное мясо<input type="checkbox" name="food" id="meat" value="meat" /></label>
+
+            <h3><b>Сколько весит ваш питомец?</b></h3>
+            <input type="number" placeholder="кг" id="catweight" min="1" max="25" required>
+            <h3><b>А у вас котик или кошечка?</b><br /></h3>
+            <label for="sex">он<input type="radio" name="sex" value="кот"></label>
+            <label for="sex">она<input type="radio" name="sex" value="кошка"></label>
+            <label for="sex">у меня много питомцев<input type="radio" name="sex"
+                    value="есть питомцы разного пола"></label>
+            <h3><b>Дополнительная информация</b></h3>
+            <textarea type="text" id="info" rows="10" cols="20"
+                placeholder="Что ещё вы можете сообщить про своего котика?" required></textarea>
+            <br />
+            <h3> <b>Добавьте фотографию питомца</b></h3>
+            <input type="file" optional /> <br />
+            <div id="result"></div>
+
+            <button class="form-button" onclick="showCat();return false">Сохранить</button>
+
+        </form>
+
+        <script src="petsowner.js"></script>
+    </main>
+    <footer>Ассоциация любителей кошек&copy;</footer>
+</body>
+
+</html>

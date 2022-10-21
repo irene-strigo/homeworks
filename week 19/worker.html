@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h2>Зарплатная карточка сотрудника</h2>
+        <input type="text" id="name" placeholder="Имя">
+        <input type="text" id="surname" placeholder="Фамилия">
+        <input type="number" id="rate" placeholder="Ставка за день работы">
+        <input type="number" id="days" placeholder="Количество дней">
+        <button onclick="showSalary();return false">Рассчитать зарплату</button>
+        <div id="result"></div>
+    </form>
+    <script src="worker.js"></script>
+</body>
+
+</html>
