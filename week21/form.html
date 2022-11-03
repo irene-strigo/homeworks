@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-heading">
+            <img src="assets/images/logo-registration (1).png">
+            <h2>Регистрация</h2>
+        </div>
+        <form novalidate class="form-container">
+            <p>Регистрация через e-mail</p>
+            <input class="form-input" id="login" type="text" placeholder="логин" pattern="^[a-zA-Z- 0-9]+$" required>
+
+            <p>на Косметисте все будут знать вас под этим именем используйте латинские буквы (a-z), цифры</p>
+            <input class="form-input" id="address" type="email" value="" placeholder="e-mail" pattern="^.+@.+\..+$"
+                required>
+            <input class="form-input" id="pass" type="password" value="" placeholder="пароль"
+                pattern="^[0-9a-zA-Z]{6,}$" required>
+            <input class="form-input" id="passrep" type="password" value="" placeholder="повторите пароль"
+                pattern="^[0-9a-zA-Z]{6,}$" required>
+            <input class="form-input" id="invit" type="text" value="" placeholder="код приглашения (если есть)"
+                optional>
+            <p>введите 6 цифр с картинки</p>
+            <div class="capture-container">
+
+                <img class="capture-input" src="https://kosmetista.ru/engine/lib/external/Manhattan/index.php">
+                <input class="capture-recinput" type="text" optional>
+            </div>
+            <div class="errorsInfo"></div>
+            <button type="submit" onclick="checkAll(); return false" class="form-button"
+                id="formButton">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        div {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .result {
+            display: flex;
+        }
+
+        .pict {
+            width: 20%;
+            height: 100%;
+        }
+
+        ;
+
+        button {
+            background-color: rgb(230, 168, 83);
+            border: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="searchform">
+        <h1>Gif searching</h1>
+        <label for="gifSearch">enter a keyword or expression<input type="text" id="gifSearch"></label>
+        <button onclick="onSearch()">search!</button>
+    </div>
+    <div class="result"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
