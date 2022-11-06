@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="ass" src="assets/images/guzica.jpg">
+
+        <img class="hand" class="animated" id="hand" src="assets/images/hand4.png">
+        <img class="hand1" class="animated" id="hand1" src="assets/images/hand3.png">
+
+        <button id="scratchbtn">scratch</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            hand.classList.add('animated1');
+        })
+        scratchbtn.onclick = function () {
+            hand.classList.remove('animated2');
+            hand1.classList.remove('animated2');
+            setTimeout(() => {
+                hand.classList.add('animated2');
+                hand1.classList.add('animated2');
+            }, 1)
+
+        }
+    </script>
+</body>
+
+</html>

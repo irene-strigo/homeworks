@@ -1,0 +1,133 @@
+@keyframes scratching {
+
+    0% {
+        opacity: 5;
+    }
+
+    11.11% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    44.44% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    from {
+        left: 50%;
+        width: 24%;
+    }
+
+    to {
+        left: 34%;
+        width: 15%;
+    }
+
+}
+
+@keyframes slidein1 {
+    from {
+        left: 20%;
+        width: 60%;
+    }
+
+    to {
+        left: 1%;
+        width: 40%;
+    }
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+        padding-top: 5em;
+
+
+    }
+}
+
+
+#scratchbtn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 5px;
+    padding: 10px;
+    align-self: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+.ass {
+    position: related
+}
+
+.hand,
+.hand1 {
+    position: absolute;
+    margin-top: 20em;
+    width: 14em;
+    margin-left: 20em;
+    display: none;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .hand,
+    .hand1 {
+        position: absolute;
+        margin-top: 15em;
+        width: 10em;
+        margin-left: 12em;
+    }
+}
+
+.animated1 {
+    animation-name: slidein;
+    animation-duration: 2s;
+    display: block;
+
+}
+
+@media screen and (max-width: 700px) {
+    .animated1 {
+        animation-name: slidein1;
+    }
+}
+
+.animated2 {
+    animation-name: scratching;
+    animation-duration: 16ms;
+    animation-iteration-count: 200;
+    display: block;
+}
+
+.hand {
+    display: block;
+
+}
+
+
+
+.hand1 {
+    animation-delay: 5ms;
+}
