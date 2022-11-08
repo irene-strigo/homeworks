@@ -66,12 +66,12 @@
 #scratchbtn {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    margin: 5px;
-    padding: 10px;
+    padding: 7px;
     align-self: center;
     background-color: antiquewhite;
     border-radius: 10px;
     border: 5px solid black;
+    color: black;
 }
 
 .ass {
